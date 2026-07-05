@@ -1,5 +1,5 @@
 [mysql]
-name=MySQL 5.7 Community Server
-baseurl=http://repo.mysql.com/yum/mysql-5.7-community/el/7/$basearch/
+name=MySQL 8.0 Community Server
+baseurl=https://repo.mysql.com/yum/mysql-8.0-community/el/9/$basearch/
 enabled=1
 gpgcheck=0
