@@ -32,8 +32,8 @@ echo -e "\e[36m>>>>>>>>> Copy Mongo repo file <<<<<<<<<<\e[0m"
 cp mongo.repo /etc/yum.repos.d/mongo.repo
 
 echo -e "\e[36m>>>>>>>>> Install MongoDB client <<<<<<<<<<\e[0m"
-yum install mongodb-org-shell -y
+sudo dnf install -y mongodb-mongosh
 
 echo -e "\e[36m>>>>>>>>> Load Schema <<<<<<<<<<\e[0m"
-mongo --host mongodb-dev.rdevopsb72.online </app/schema/catalogue.js
+mongo --host mongodb.rajkarun0606.online </app/schema/catalogue.js
 I
