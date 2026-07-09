@@ -1,5 +1,5 @@
 echo -e "\e[36m>>>>>>>> copying Mongo_repo <<<<<<<<\e[0m"
-cp /Users/raj/Raghu_DevOps/robo_shop/mongo.repo /etc/yum.repos.d/mongo.repo
+cp mongo.repo /etc/yum.repos.d/mongo.repo
 
 echo -e "\e[36m>>>>>>>> Install MongoDB<<<<<<<<\e[0m"
 dnf install mongodb-org -y
