@@ -1,8 +1,8 @@
 echo -e "\e[36m>>>>>>>> copying catalogue service <<<<<<<<\e[0"
-cp /Users/raj/Raghu_DevOps/robo_shop/catalogue.service /etc/systemd/system/catalogue.service
+cp catalogue.service /etc/systemd/system/catalogue.service
 
 echo -e "\e[36m>>>>>>>> copying mongo repo <<<<<<<<\e[0"
-cp /Users/raj/Raghu_DevOps/robo_shop/mongo.repo /etc/yum.repos.d/mongo.repo
+cp mongo.repo /etc/yum.repos.d/mongo.repo
 
 dnf module disable nodejs -y
 dnf module enable nodejs:18 -y
