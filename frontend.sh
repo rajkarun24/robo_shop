@@ -2,7 +2,7 @@ echo -e "\e[36m>>>>>>>> Install Ngnix <<<<<<<<\e[0"
 dnf install nginx -y
 
 echo -e "\e[36m>>>>>>>> copying roboshop_conf <<<<<<<<\e[0"
-cp /Users/raj/Raghu_DevOps/robo_shop/roboshop.conf /etc/nginx/default.d/roboshop.conf
+cp roboshop.conf /etc/nginx/default.d/roboshop.conf
 
 rm -rf /usr/share/nginx/html/*
 
