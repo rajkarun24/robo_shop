@@ -8,6 +8,7 @@ echo -e "\e[36m>>>>>>>>> Add Application User <<<<<<<<\e[0m"
 useradd roboshop
 
 echo -e "\e[36m>>>>>>>>> Create Application Directory <<<<<<<<\e[0m"
+rm -rf /app
 mkdir /app
 
 echo -e "\e[36m>>>>>>>>> Download App Content <<<<<<<<\e[0m"
@@ -21,7 +22,7 @@ echo -e "\e[36m>>>>>>>>> Install NodeJS Dependencies <<<<<<<<\e[0m"
 npm install
 
 echo -e "\e[36m>>>>>>>>> Copy Catalogue SystemD file <<<<<<<<\e[0m"
-cp catalogue.service /etc/systemd/system/catalogue.service
+cp /Users/raj/Raghu_DevOps/robo_shop/catalogue.service /etc/systemd/system/catalogue.service
 
 echo -e "\e[36m>>>>>>>>> Start Catalogue Servie <<<<<<<<<<\e[0m"
 systemctl daemon-reload
@@ -29,7 +30,7 @@ systemctl enable catalogue
 systemctl restart catalogue
 
 echo -e "\e[36m>>>>>>>>> Copy Mongo repo file <<<<<<<<<<\e[0m"
-cp mongo.repo /etc/yum.repos.d/mongo.repo
+cp /Users/raj/Raghu_DevOps/robo_shop/mongo.repo /etc/yum.repos.d/mongo.repo
 
 echo -e "\e[36m>>>>>>>>> Install MongoDB client <<<<<<<<<<\e[0m"
 yum install mongodb-org-shell -y
